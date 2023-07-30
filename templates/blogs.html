@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Blog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body id="body">
+    <nav class="navigation">
+            <a href ="/">Home</a>
+            <a href ="/about/">About</a>
+            <a href ="/blogs/">Blogs</a>
+            <a href ="/contact/">Contact</a>
+    </nav>
+    <div class="body">
+        <div class="text">
+             <h1>Three Important Data Roles</h1>
+    <p>July 2023 | by Loni Tande</p>
+    <img src ="{{url_for('static',filename='images/loni.jpg')}}" alt="Loni's Photo" class="main_photo">
+    <p>The threee important data roles are: </p>
+    <p>
+        <ol>
+            <li>Data Science</li>
+            <li>Data Egineering</li>
+            <li>Data Analytics</li>
+        </ol>
+    </p>
+    <p>
+        Data science refers to the field of extracting insights and knowledge from data using various statistical and computational
+        <br> techniques. Data scientists are responsible for developing algorithms, models, and statistical analyses to extract insights
+        <br>and actionable information from complex datasets.
+    </p>
+    <p>
+        Data engineering is all about the design, construction, maintenance, and scaling of the data architecture and infrastructure
+        <br>that supports business applications and analytics. Data engineers build and manage the data pipelines that allow data
+        <br>scientists and analysts to extract insights from the data.
+    </p>
+    <p>
+        Data analytics is the process of examining and interpreting data to discern patterns and draw conclusions from the data.
+        <br>Data analysts analyze large amounts of information and communicate their findings to non-technical stakeholders in a
+        <br>clear and concise way, driving data-driven decision-making in the business.
+        <br>They also collaborate with data scientists and engineers to ensure the data is clean, reliable and easy to access.
+    </p>
+    <p>
+        In conclusion, the field of data science, data engineering, and data analytics are all integral components of data-driven
+        <br>decision-making in the modern business landscape.While data scientists develop algorithms and models to extract insights
+        <br>and knowledge from data, data engineers ensure the underlying data architecture and infrastructure is reliable and scalable.
+        <br>Data analysts, on the other hand, translate the findings into easy to understand results which help non-technical stakeholders
+        <br>make informed decisions.Together, these roles play a critical role in driving innovation, increasing efficiency, and creating
+        <br>a competitive edge for businesses across all industries.
+    </p>
+        </div>
+    </div>
+    <div class="related_posts">
+        <p><a href="{{url_for('static',filename='images/loni.jpg')}}" class="related_posts_url">Related Posts</a></p>
+    <p>
+        <img src="{{url_for('static',filename='images/loni.jpg')}}" alt="Loni's Photo" class="img1">
+        <br> The Beauty of Data
+    </p>
+    <p>
+        <img src="{{url_for('static',filename='images/loni.jpg')}}" alt="Loni's Photo" class="img1">
+        <br> Data-driven results
+    </p>
+    <p>
+        <img src="{{url_for('static',filename='images/loni.jpg')}}" alt="Loni's Photo" class="img1">
+        <br> The Data Anaysis Process
+    </p>
+    <p>
+        <img src="{{url_for('static',filename='images/loni.jpg')}}" alt="Loni's Photo" class="img1">
+        <br> Data Viz Tools
+    </p>
+    </div>
+
+    <section>
+        <footer class="footer">
+            <p>Sample Blog
+                <br>Loni's Buyam Demo Project
+            </p>
+        </footer>
+    </section>
+    </body>
+</html>
